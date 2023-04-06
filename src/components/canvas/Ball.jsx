@@ -1,4 +1,4 @@
-import React, { Suspense } from "react";
+import React, { Suspense, useState } from "react";
 import { Canvas } from "@react-three/fiber";
 import {
     Decal,
@@ -11,16 +11,24 @@ import CanvasLoader from "../Loader";
 
 const Ball = (props) => {
     const [decal] = useTexture([props.imgUrl]);
+    const [rotation, setRotation] = useState(0.5);
 
     return (
         <Float
-            speed={1.75}
-            rotationIntensity={1}
+            speed={1}
+            rotationIntensity={rotation}
             floatIntensity={2}
         >
             <ambientLight intensity={0.25} />
             <directionalLight position={[0, 0, 0.05]} />
-            <mesh castShadow receiveShadow scale={2.75}>
+            <mesh
+                castShadow
+                receiveShadow
+                scale={2.75}
+                onPointerLeave={() => {
+                    setRotation(0);
+                }}
+            >
                 <icosahedronGeometry args={[1, 1]} />
                 <meshStandardMaterial
                     color="#fff8eb"
@@ -28,7 +36,11 @@ const Ball = (props) => {
                     polygonOffsetFactor={-5}
                     flatShading
                 />
-                <Decal map={decal} position={[0, 0, 1]} rotation={[ 2 * Math.PI, 0, 6.25]} />
+                <Decal
+                    map={decal}
+                    position={[0, 0, 1]}
+                    rotation={[2 * Math.PI, 0, 6.25]}
+                />
             </mesh>
         </Float>
     );
