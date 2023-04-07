@@ -158,72 +158,72 @@ const experiences = [
 const testimonials = [
     {
         testimonial:
-            "I thought it was impossible to make a website as beautiful as our product, but Rick proved me wrong.",
-        name: "Sara Lee",
+            "TBI",
+        name: "No One",
         designation: "CFO",
-        company: "Acme Co",
+        company: "Fake",
         image: "https://randomuser.me/api/portraits/women/4.jpg",
     },
     {
         testimonial:
-            "I've never met a web developer who truly cares about their clients' success like Rick does.",
-        name: "Chris Brown",
+            "TBI",
+        name: "No One",
         designation: "COO",
-        company: "DEF Corp",
+        company: "Fake",
         image: "https://randomuser.me/api/portraits/men/5.jpg",
     },
     {
         testimonial:
-            "After Rick optimized our website, our traffic increased by 50%. We can't thank them enough!",
-        name: "Lisa Wang",
+            "TBI",
+        name: "No One",
         designation: "CTO",
-        company: "456 Enterprises",
+        company: "Fake",
         image: "https://randomuser.me/api/portraits/women/6.jpg",
     },
 ];
 
 const projects = [
     {
-        name: "Car Rent",
+        name: "Pokedex",
         description:
-            "Web-based platform that allows users to search, book, and manage car rentals from various providers, providing a convenient and efficient solution for transportation needs.",
+            "Fun little Pokemon application that pulls from the Pokeapi to show you a list of all the Pokemon and more information if you click on one.",
         tags: [
             {
                 name: "react",
                 color: "blue-text-gradient",
             },
             {
-                name: "mongodb",
+                name: "api",
                 color: "green-text-gradient",
             },
             {
-                name: "tailwind",
+                name: "bootstrap",
                 color: "pink-text-gradient",
             },
         ],
         image: carrent,
-        source_code_link: "https://github.com/",
+        source_code_link: "https://github.com/lawtonb16/pokedex",
     },
     {
-        name: "Job IT",
+        name: "NuCampSite",
         description:
-            "Web application that enables users to search for job openings, view estimated salary ranges for positions, and locate available jobs based on their current location.",
+            "Web application about a fictious campground made throughout the course of my time at the NuCamp coding bootcamp.",
         tags: [
             {
                 name: "react",
                 color: "blue-text-gradient",
             },
             {
-                name: "restapi",
+                name: "redux",
                 color: "green-text-gradient",
             },
             {
-                name: "scss",
+                name: "bootstrap",
                 color: "pink-text-gradient",
             },
         ],
         image: jobit,
-        source_code_link: "https://github.com/",
+        source_code_link: "https://github.com/lawtonb16/react-nucampsite",
     },
     {
         name: "Trip Guide",
