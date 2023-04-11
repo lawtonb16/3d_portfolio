@@ -28,6 +28,8 @@ import freelance from "./company/freelance.png";
 import carrent from "./carrent.png";
 import jobit from "./jobit.png";
 import tripguide from "./tripguide.png";
+import pokedex from "./Pokedex.png"
+import nucamp from "./nucamp.png"
 
 export {
   logo,
@@ -57,4 +59,6 @@ export {
   carrent,
   jobit,
   tripguide,
+  pokedex,
+  nucamp
 };

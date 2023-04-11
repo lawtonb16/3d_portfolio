@@ -17,10 +17,11 @@ import {
     jll,
     freelance,
     musco,
-    carrent,
+    nucamp,
     jobit,
     tripguide,
     threejs,
+    pokedex
 } from "../assets";
 
 export const navLinks = [
@@ -201,7 +202,7 @@ const projects = [
                 color: "pink-text-gradient",
             },
         ],
-        image: carrent,
+        image: pokedex,
         source_code_link: "https://github.com/lawtonb16/pokedex",
     },
     {
@@ -222,7 +223,7 @@ const projects = [
                 color: "pink-text-gradient",
             },
         ],
-        image: jobit,
+        image: nucamp,
         source_code_link: "https://github.com/lawtonb16/react-nucampsite",
     },
     {
